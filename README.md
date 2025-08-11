@@ -18,7 +18,7 @@ This is a data analysis project in Python aimed at exploring the key environment
 ---
 
 ### Project Goal
-The primary scientific objective of this project is to identify the "optimal ecological niche" for phytoplankton growth by analyzing a real-world oceanographic dataset. Specifically, this analysis aims to answer the following questions:
+The primary scientific objective of this project is to identify the "optimal ecological niche" for phytoplankton growth by analyzing a real-world oceanographic dataset. Specifically, it aims to answer the following questions:
 * Which environmental factors (e.g., temperature, nutrients) show the strongest correlation with phytoplankton biomass?
 * What are the classic vertical distribution patterns of these key variables in the ocean water column?
 * Under what specific combination of temperature, nutrient concentration, and depth does high chlorophyll concentration occur?
@@ -53,7 +53,7 @@ The project follows a standard data science workflow:
 #### 1. The Grand Overview: Variable Correlations
 The heatmap displays the Pearson correlation coefficients between all environmental variables. A key finding is the strong **negative correlation** between chlorophyll concentration and the three primary nutrients (**nitrate, phosphate, and silicate**). This aligns with established oceanographic principles, where phytoplankton growth consumes available nutrients in the water.
 
-*[Insert your heatmap image here: Correlation_Heatmap.png]*
+![Correlation Heatmap](Preview_graph_of_data_analysis/Correlation%20Heatmap%20Between%20Environmental%20Factors%20and%20Chlorophyll-a.png)
 
 #### 2. The Scientific Context: Ocean Vertical Structure
 The multi-panel depth profile plot clearly illustrates classic vertical stratification phenomena:
@@ -61,13 +61,13 @@ The multi-panel depth profile plot clearly illustrates classic vertical stratifi
 * **Nutricline**: Nutrients are depleted at the surface and begin to increase sharply at a depth of approximately 100-150 meters.
 * **Deep Chlorophyll Maximum (DCM)**: The peak chlorophyll concentration is found not at the surface, but at a depth of around 100-125 meters. This layer represents the optimal balance point between light availability from above and nutrient supply from below.
 
-*[Insert your depth profile plot image here: Depth_Profile_Plot.png]*
+![Vertical Profiles of Key Oceanographic Parameters (0-400m)](Preview_graph_of_data_analysis/Vertical%20Profiles%20of%20Key%20Oceanographic%20Parameters%20(0-400m).png)
 
 #### 3. The Insightful Discovery: The Phytoplankton Niche
 This interactive 3D scatter plot is the central insight of the analysis. Each point represents a water sample, with its color and size determined by chlorophyll concentration.
 By rotating and observing the plot, it becomes clear that the largest, brightest points (high chlorophyll) are highly concentrated in a specific 3D "cloud." This provides strong evidence that phytoplankton blooms are the result of a delicate trade-off, requiring a combination of **suitable temperature (approx. 20-25°C)**, **nascent nutrient availability (Nitrate > 0)**, and **sufficient light (depth of approx. 50-125m)**.
 
-*[Insert your 3D rotating GIF here: 3d_rotating_plot.gif]*
+![The Ecological Niche for Chlorophyll-a.gif](Preview_graph_of_data_analysis/The%20Ecological%20Niche%20for%20Chlorophyll-a.gif)
 
 ---
 
