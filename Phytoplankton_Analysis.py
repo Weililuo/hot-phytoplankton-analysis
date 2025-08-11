@@ -9,7 +9,7 @@ import plotly.express as px
 # --- Import files for processing ---
 
 # Local folder that contains all the files with data
-data_folder = "/Users/Zhuanz/Documents/VsCode/Phytoplankton_growth_affected_project/Phytoplankton_Data"
+data_folder = "/Users/Zhuanz/Documents/VsCode/hot-phytoplankton-analysis/Phytoplankton_Data"
 
 files_to_process = [  # Bottle Extraction data file from different stations of HOT-DOGS
     '(2) ALOHA.nc',

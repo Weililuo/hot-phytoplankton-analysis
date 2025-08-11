@@ -3,11 +3,11 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import os
-import imageio
+import imageio.v2 as imageio
 
 # --- Import files for processing ---
 
-data_folder = "/Users/Zhuanz/Documents/VsCode/Phytoplankton_growth_affected_project/Phytoplankton_Data"  # Local folder that contains all the files with data
+data_folder = "/Users/Zhuanz/Documents/VsCode/hot-phytoplankton-analysis/Phytoplankton_Data"  # Local folder that contains all the files with data
 
 files_to_process = [  # Bottle Extraction data file from different stations of HOT-DOGS
     "(2) ALOHA.nc",
@@ -129,8 +129,8 @@ for i in range(n_frames):  # Loop to generate every frame of photos
         f"Generating Frame {i+1}/{n_frames}"
     )  # Clearly demonstrating which frame is processing right now
 
-output_gif_path = "The Ecological Niche for Chlorophyll-a"
-with imageio.get_writer(output_gif_path, mode="I", duration=50) as writer:
+output_gif_path = "The Ecological Niche for Chlorophyll-a.gif"
+with imageio.get_writer(output_gif_path, mode="I", duration=50, loop=0) as writer:
     for filename in list_of_frame_files:
         image = imageio.imread(filename)
         writer.append_data(image)
