@@ -219,7 +219,3 @@ __marimo__/
 *.synctex.gz
 *.fdb_latexmk
 *.fls
-
-# Optionally, ignore the final PDF as well,
-# since it can be generated from the source code.
-*.pdf
