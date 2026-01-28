@@ -32,7 +32,7 @@ for filename in files_to_process:
     try:
         # Transfer netCDF to Pandas Dataframe for better editing
         ds = xr.open_dataset(file_path)
-        data_dict = {            
+        data_dict = {
             'pressure': ds['press'].values,
             'temperature': ds['temp'].values,
             'salinity': ds['bsal'].values,
