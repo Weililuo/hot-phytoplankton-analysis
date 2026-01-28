@@ -5,7 +5,6 @@
 
 This is a data analysis project in Python aimed at exploring the key environmental factors that influence phytoplankton biomass (measured as Chlorophyll-a) within the Hawaii Ocean Time-series (HOT) dataset. The project leverages a series of visualizations to uncover the complex interplay between temperature, depth, and nutrient concentrations.
 
-### 项目最后更新时间：2025年
 ---
 
 ## Table of Contents
@@ -23,6 +22,11 @@ The primary scientific objective of this project is to identify the "optimal eco
 * Which environmental factors (e.g., temperature, nutrients) show the strongest correlation with phytoplankton biomass?
 * What are the classic vertical distribution patterns of these key variables in the ocean water column?
 * Under what specific combination of temperature, nutrient concentration, and depth does high chlorophyll concentration occur?
+
+### Machine Learning Integration (Planned/In Progress)
+Beyond traditional statistical analysis, this project incorporates machine learning techniques to predict phytoplankton biomass dynamics.
+* **Objective**: To build predictive models (e.g., Random Forest, Linear Regression) that estimate Chlorophyll-a levels based on temperature, salinity, and nutrient data.
+* **Significance**: This allows for forecasting ecological responses to environmental changes using data-driven approaches.
 
 ---
 
