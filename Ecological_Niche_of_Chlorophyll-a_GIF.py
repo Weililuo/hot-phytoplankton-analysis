@@ -135,6 +135,6 @@ with imageio.get_writer(output_gif_path, mode="I", duration=50, loop=0) as write
         image = imageio.imread(filename)
         writer.append_data(image)
 
-for filename in list_of_frame_files:  #  Clean the temporary photos in the frame file
+for filename in list_of_frame_files:  # Clean the temporary photos in the frame file
     os.remove(filename)
 os.rmdir(frames_folder)
